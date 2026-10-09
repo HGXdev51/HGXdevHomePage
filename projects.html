@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HGXdev 的项目：个人网站、赴时手记小程序、Electron 桌面应用与竞赛经历。">
+  <meta name="theme-color" content="#0b0d10">
+  <title>项目 — HGXdev</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body data-page="projects">
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" data-link>
+      <span class="brand-mark">HGX</span><span class="brand-slash">//</span><span class="brand-dev">dev</span>
+    </a>
+
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html" data-link><span class="nav-index">01</span>首页</a>
+      <a href="about.html" data-link><span class="nav-index">02</span>关于</a>
+      <a href="projects.html" data-link><span class="nav-index">03</span>项目</a>
+      <a href="timeline.html" data-link><span class="nav-index">04</span>时间线</a>
+      <a href="contact.html" data-link><span class="nav-index">05</span>联系</a>
+    </nav>
+
+    <div class="header-meta">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>系统在线</span>
+      <span class="clock" id="clock">--:--:--</span>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
+
+  <main id="top">
+    <section class="page-intro">
+      <p class="eyebrow" data-reveal><span>03</span> / projects</p>
+      <h1 data-reveal style="--delay:.05s">项目<span class="accent">记录</span></h1>
+      <p class="page-lede" data-reveal style="--delay:.1s">
+        不追求数量，追求每一件都能说清楚：为什么做、怎么做、做到了哪里。
+      </p>
+    </section>
+
+    <section class="section project-grid">
+      <article class="project-card" id="fushi" data-reveal>
+        <div class="project-card-top">
+          <span class="project-number">01</span>
+          <span class="project-state">已上线</span>
+        </div>
+        <h2>赴时手记</h2>
+        <p class="project-type">微信小程序 / AI 辅助开发</p>
+        <p class="project-brief">
+          一个关注时间与记录的小程序。从产品想法、界面到功能实现，大量借助 AI 辅助完成，目前已上线，可在微信搜索「赴时手记」使用。
+        </p>
+        <ul class="tag-list">
+          <li>微信小程序</li>
+          <li>云开发</li>
+          <li>AI 辅助</li>
+          <li>独立项目</li>
+        </ul>
+      </article>
+
+      <article class="project-card" id="website" data-reveal style="--delay:.06s">
+        <div class="project-card-top">
+          <span class="project-number">02</span>
+          <span class="project-state muted">迭代中</span>
+        </div>
+        <h2>个人网站</h2>
+        <p class="project-type">多页面 / 响应式 / 动效</p>
+        <p class="project-brief">
+          就是你现在看到的这个站点。拆分成多个 HTML 页面，配合独立 CSS 与 JavaScript，加入滚动揭示和页面过渡，让网站保持清晰的同时不至于像一套通用模板。
+        </p>
+        <ul class="tag-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>响应式</li>
+        </ul>
+      </article>
+
+      <a class="project-card project-card-link" id="electron" href="https://v.douyin.com/j5txfOxbVkg/" target="_blank" rel="noreferrer" data-reveal style="--delay:.12s">
+        <div class="project-card-top">
+          <span class="project-number">03</span>
+          <span class="project-state muted">原型</span>
+        </div>
+        <h2>Electron 桌面应用</h2>
+        <p class="project-type">Electron / Node.js</p>
+        <p class="project-brief">
+          尝试将 Web 技术带到桌面环境，完成跨端产品原型。重点不在界面炫技，而在理解主进程、渲染进程和本地能力之间的边界。
+        </p>
+        <ul class="tag-list">
+          <li>Electron</li>
+          <li>Node.js</li>
+          <li>跨端</li>
+          <li>原型</li>
+        </ul>
+        <span class="project-card-go">查看具体信息 <span>↗</span></span>
+      </a>
+
+      <a class="project-card project-card-link" id="story" href="https://yys.hgxdev.com" target="_blank" rel="noreferrer" data-reveal style="--delay:.18s">
+        <div class="project-card-top">
+          <span class="project-number">04</span>
+          <span class="project-state muted">私密站点</span>
+        </div>
+        <h2>那个追不到的女孩</h2>
+        <p class="project-type">高中故事 / yys.hgxdev.com</p>
+        <p class="project-brief">
+          高中时的一段个人故事。访问需要密码：<strong>0902</strong>。
+        </p>
+        <ul class="tag-list">
+          <li>个人故事</li>
+          <li>高中</li>
+          <li>访问密码 0902</li>
+        </ul>
+        <span class="project-card-go">输入密码 0902 访问 <span>↗</span></span>
+      </a>
+
+      <article class="project-card" id="robot" data-reveal>
+        <div class="project-card-top">
+          <span class="project-number">05</span>
+          <span class="project-state award">省二等奖</span>
+        </div>
+        <h2>“领航杯”机器人项目</h2>
+        <p class="project-type">机器人 / 团队协作</p>
+        <p class="project-brief">
+          高中期间参加江苏省“领航杯”机器人项目，获得二等奖。经历了方案设计、传感器调试和现场应变，也让我理解了代码只有落到硬件上才算真正运行。
+        </p>
+        <ul class="tag-list">
+          <li>机器人</li>
+          <li>传感器</li>
+          <li>现场调试</li>
+          <li>团队</li>
+        </ul>
+      </article>
+
+      <article class="project-card" id="genai" data-reveal style="--delay:.06s">
+        <div class="project-card-top">
+          <span class="project-number">06</span>
+          <span class="project-state award">一等奖</span>
+        </div>
+        <h2>生成式人工智能专项赛</h2>
+        <p class="project-type">生成式 AI / 任务实践</p>
+        <p class="project-brief">
+          围绕生成式 AI 完成专项任务并获一等奖。比起“会用模型”，更重要的是学会拆任务、控制输出，并把 AI 放进一个可验证的流程里。
+        </p>
+        <ul class="tag-list">
+          <li>生成式 AI</li>
+          <li>工作流</li>
+          <li>Prompt</li>
+          <li>实践</li>
+        </ul>
+      </article>
+
+      <article class="project-card project-card-soft" id="experiments" data-reveal style="--delay:.12s">
+        <div class="project-card-top">
+          <span class="project-number">+</span>
+          <span class="project-state muted">实验</span>
+        </div>
+        <h2>脚本与小工具</h2>
+        <p class="project-type">Python / Java / JS</p>
+        <p class="project-brief">
+          还有一些不大但有用的东西：整理文件的脚本、处理数据的小程序、自动化重复操作的实验。它们共同组成了我的“工具箱底层”。
+        </p>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>Java</li>
+          <li>自动化</li>
+          <li>Open source</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section project-note" data-reveal>
+      <p>
+        <span class="note-mark">*</span>
+        小程序“赴时手记”可直接在微信搜索使用；部分桌面与脚本项目仍处于原型或内部迭代阶段。
+      </p>
+    </section>
+
+    <section class="section cta-band" data-reveal>
+      <p>想了解这些项目背后的成长过程？</p>
+      <a class="btn btn-primary" href="timeline.html" data-link>查看时间线 <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">HGX<span>//</span>dev</div>
+    <p>Built by curiosity, debugged with patience.</p>
+    <div class="footer-meta">
+      <span id="year">2026</span>
+      <span>Jiangsu / CN</span>
+      <a href="#top" data-link>返回顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=6"></script>
+</body>
+</html>

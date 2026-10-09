@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HGXdev 的时间线：AI 近年发展与我个人兴趣和开发方式的变化。">
+  <meta name="theme-color" content="#0b0d10">
+  <title>时间线 — HGXdev</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body data-page="timeline">
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" data-link>
+      <span class="brand-mark">HGX</span><span class="brand-slash">//</span><span class="brand-dev">dev</span>
+    </a>
+
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html" data-link><span class="nav-index">01</span>首页</a>
+      <a href="about.html" data-link><span class="nav-index">02</span>关于</a>
+      <a href="projects.html" data-link><span class="nav-index">03</span>项目</a>
+      <a href="timeline.html" data-link><span class="nav-index">04</span>时间线</a>
+      <a href="contact.html" data-link><span class="nav-index">05</span>联系</a>
+    </nav>
+
+    <div class="header-meta">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>系统在线</span>
+      <span class="clock" id="clock">--:--:--</span>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
+
+  <main id="top">
+    <section class="page-intro timeline-intro">
+      <p class="eyebrow" data-reveal><span>04</span> / timeline</p>
+      <h1 data-reveal style="--delay:.05s">两条线，<span class="accent">一个方向</span></h1>
+      <p class="page-lede" data-reveal style="--delay:.1s">
+        左边是世界 AI 的推进，右边是我的兴趣与开发方式。它们并不总是同步，但最终汇到同一个点：把 AI 变成可靠的生产力。
+      </p>
+      <p class="timeline-note" data-reveal style="--delay:.16s">
+        <span>说明</span> 右侧个人阶段按成长阶段标记；左右年份为 AI 事件参考时间。
+      </p>
+    </section>
+
+    <section class="section timeline-section">
+      <div class="timeline-wrap">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <article class="timeline-row" data-reveal>
+          <div class="timeline-side ai">
+            <div class="timeline-card">
+              <span class="track-label">AI 推进</span>
+              <h3>Transformer 被提出</h3>
+              <p>“Attention Is All You Need”出现，为后来的大模型打下注意力机制基础。</p>
+            </div>
+          </div>
+          <div class="timeline-node"><span>2017</span></div>
+          <div class="timeline-side personal">
+            <div class="timeline-card">
+              <span class="track-label">我的轨迹</span>
+              <h3>小学三年级 · Python 入门</h3>
+              <p>从 Python 和它的各种库开始“古法编程”：照着文档跑小游戏、写脚本，第一次觉得代码能替自己做事。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-row" data-reveal>
+          <div class="timeline-side ai">
+            <div class="timeline-card">
+              <span class="track-label">AI 推进</span>
+              <h3>预训练语言模型扩散</h3>
+              <p>BERT、GPT 系列相继出现，语言模型从“实验”走向可迁移的通用能力。</p>
+            </div>
+          </div>
+          <div class="timeline-node"><span>2018</span></div>
+          <div class="timeline-side personal">
+            <div class="timeline-card">
+              <span class="track-label">我的轨迹</span>
+              <h3>Python 变成日常工具</h3>
+              <p>开始用库和脚本处理资料、自动化小任务。代码不只是玩具，而是一种解决问题的习惯。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-row" data-reveal>
+          <div class="timeline-side ai">
+            <div class="timeline-card">
+              <span class="track-label">AI 推进</span>
+              <h3>多模态开始并行</h3>
+              <p>CLIP、DALL·E 等模型让图像与文本走得更近，AI 不再只理解文字。</p>
+            </div>
+          </div>
+          <div class="timeline-node"><span>2021</span></div>
+          <div class="timeline-side personal">
+            <div class="timeline-card">
+              <span class="track-label">我的轨迹</span>
+              <h3>转向 Java</h3>
+              <p>从 Python 进入 Java，理解面向对象、类型与工程结构。写代码开始更关注“长期可维护”，而不只是快速跑通。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-row" data-reveal>
+          <div class="timeline-side ai">
+            <div class="timeline-card">
+              <span class="track-label">AI 推进</span>
+              <h3>ChatGPT 与扩散模型爆发</h3>
+              <p>生成式 AI 进入大众视野。AI 第一次明显参与我的学习和开发流程。</p>
+            </div>
+          </div>
+          <div class="timeline-node"><span>2022</span></div>
+          <div class="timeline-side personal">
+            <div class="timeline-card">
+              <span class="track-label">我的轨迹</span>
+              <h3>把 AI 当作副驾驶</h3>
+              <p>开始用 AI 查资料、解释代码、补全思路。开发节奏明显加快，也更愿意去试以前觉得难的东西。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-row" data-reveal>
+          <div class="timeline-side ai">
+            <div class="timeline-card">
+              <span class="track-label">AI 推进</span>
+              <h3>GPT-4 与开源模型竞争</h3>
+              <p>模型能力继续提升，编程、推理和多模态逐渐整合，AI 工具开始进入真实工作流。</p>
+            </div>
+          </div>
+          <div class="timeline-node"><span>2023</span></div>
+          <div class="timeline-side personal">
+            <div class="timeline-card">
+              <span class="track-label">我的轨迹</span>
+              <h3>开始做完整项目</h3>
+              <p>个人网站、微信小程序“赴时手记”上线，用 AI 辅助完成从想法到上线的完整链路。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-row" data-reveal>
+          <div class="timeline-side ai">
+            <div class="timeline-card">
+              <span class="track-label">AI 推进</span>
+              <h3>Agent 与编码智能体兴起</h3>
+              <p>AI 不再只给建议，也能调用工具、读写文件、执行任务。开发范式开始改变。</p>
+            </div>
+          </div>
+          <div class="timeline-node"><span>2024</span></div>
+          <div class="timeline-side personal">
+            <div class="timeline-card">
+              <span class="track-label">我的轨迹</span>
+              <h3>用 AI 加速，同时保持判断</h3>
+              <p>参加“领航杯”机器人项目获省二等奖，生成式人工智能专项赛获一等奖；也开始尝试 Electron 桌面应用。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-row" data-reveal>
+          <div class="timeline-side ai">
+            <div class="timeline-card">
+              <span class="track-label">AI 推进</span>
+              <h3>推理模型与更长的上下文</h3>
+              <p>模型开始强调“思考后再回答”，能够处理更复杂、更长链条的任务。</p>
+            </div>
+          </div>
+          <div class="timeline-node"><span>2025</span></div>
+          <div class="timeline-side personal">
+            <div class="timeline-card">
+              <span class="track-label">我的轨迹</span>
+              <h3>把 AI 变成工作流</h3>
+              <p>从“偶尔用一下”到“围绕 AI 设计开发流程”。开始关注 agent 工具、自动化与产品落地的结合。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-row" data-reveal>
+          <div class="timeline-side ai">
+            <div class="timeline-card">
+              <span class="track-label">AI 推进</span>
+              <h3>AI 成为基础设施的一部分</h3>
+              <p>模型、工具与产品进一步融合，重要的问题从“能不能生成”变成“如何稳定地使用”。</p>
+            </div>
+          </div>
+          <div class="timeline-node now"><span>NOW</span></div>
+          <div class="timeline-side personal">
+            <div class="timeline-card">
+              <span class="track-label">我的轨迹</span>
+              <h3>持续构建，而不是追逐热点</h3>
+              <p>把已经学会的 Python、Java 与新的 AI 工具组合起来，继续做小产品、桌面应用和个人网站。</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta-band" data-reveal>
+      <p>这些经历最终变成了什么？</p>
+      <a class="btn btn-primary" href="projects.html" data-link>去看项目 <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">HGX<span>//</span>dev</div>
+    <p>Built by curiosity, debugged with patience.</p>
+    <div class="footer-meta">
+      <span id="year">2026</span>
+      <span>Jiangsu / CN</span>
+      <a href="#top" data-link>返回顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=6"></script>
+</body>
+</html>

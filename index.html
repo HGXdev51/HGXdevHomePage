@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HGXdev 的个人网站：喜欢用代码解决问题，也喜欢让 AI 成为开发加速器。">
+  <meta name="theme-color" content="#0b0d10">
+  <title>HGXdev个人网站</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body data-page="home">
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" data-link>
+      <span class="brand-mark">HGX</span><span class="brand-slash">//</span><span class="brand-dev">dev</span>
+    </a>
+
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html" data-link><span class="nav-index">01</span>首页</a>
+      <a href="about.html" data-link><span class="nav-index">02</span>关于</a>
+      <a href="projects.html" data-link><span class="nav-index">03</span>项目</a>
+      <a href="timeline.html" data-link><span class="nav-index">04</span>时间线</a>
+      <a href="contact.html" data-link><span class="nav-index">05</span>联系</a>
+    </nav>
+
+    <div class="header-meta">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>系统在线</span>
+      <span class="clock" id="clock">--:--:--</span>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal><span>01</span> / personal dev log</p>
+          <h1 class="hero-title" data-reveal style="--delay:.05s">
+            HGX<span class="accent">dev</span>
+          </h1>
+          <p class="hero-lede" data-reveal style="--delay:.12s">
+            一个喜欢用代码解决实际问题的人。<br>
+            从 Python 到 Java，再到 AI 辅助开发——<span class="text-mark">工具在变，好奇心没变</span>。
+          </p>
+          <div class="hero-actions" data-reveal style="--delay:.18s">
+            <a class="btn btn-primary" href="projects.html" data-link>查看项目 <span>↗</span></a>
+            <a class="btn btn-ghost" href="timeline.html" data-link>看我的时间线</a>
+            <a class="btn btn-ghost" href="contact.html" data-link>联系我</a>
+          </div>
+          <dl class="hero-meta" data-reveal style="--delay:.24s">
+            <div><dt>位置</dt><dd>Jiangsu / CN</dd></div>
+            <div><dt>方向</dt><dd>AI × Software</dd></div>
+            <div><dt>状态</dt><dd>持续构建中</dd></div>
+          </dl>
+        </div>
+
+        <div class="terminal-frame" data-reveal="right" style="--delay:.18s" aria-label="终端预览">
+          <div class="terminal-bar">
+            <span class="terminal-dots"><i></i><i></i><i></i></span>
+            <span class="terminal-title">hgx@dev: ~/workspace</span>
+            <span class="terminal-env">bash</span>
+          </div>
+          <div class="terminal-body" id="terminal">
+            <p class="terminal-line muted"># 这是一个会自己写两行的终端</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="now">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span>02</span> / current signal</p>
+        <h2>最近在忙什么</h2>
+      </div>
+
+      <div class="now-grid">
+        <article class="now-card" data-reveal style="--delay:.05s">
+          <span class="card-tag">Main focus</span>
+          <h3>把 AI 变成自己的开发工作流</h3>
+          <p>不再只是“问 AI 写一段代码”，而是把需求、设计、实现和验证串成一条可控的链路。</p>
+          <span class="card-status"><i></i>进行中</span>
+        </article>
+        <article class="now-card" data-reveal style="--delay:.12s">
+          <span class="card-tag">Learning</span>
+          <h3>Agent 工具与自动化</h3>
+          <p>研究如何让多个工具协作，把重复的事情交给脚本，把判断留给自己。</p>
+          <span class="card-status warm"><i></i>持续探索</span>
+        </article>
+        <article class="now-card" data-reveal style="--delay:.19s">
+          <span class="card-tag">Building</span>
+          <h3>个人产品与桌面应用</h3>
+          <p>从微信小程序到 Electron，用真实项目验证想法，而不是停在 demo。</p>
+          <span class="card-status"><i></i>迭代中</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span>03</span> / selected work</p>
+        <h2>挑几个做过的项目</h2>
+      </div>
+
+      <div class="featured-grid">
+        <a class="project-row" href="projects.html#fushi" data-link data-reveal>
+          <span class="project-index">A</span>
+          <span class="project-main">
+            <span class="project-name">赴时手记 <em>微信小程序</em></span>
+            <span class="project-desc">AI 辅助开发的时间记录小程序，已上线，可在微信搜索使用。</span>
+          </span>
+          <span class="project-state">已上线</span>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a class="project-row" href="projects.html#electron" data-link data-reveal style="--delay:.06s">
+          <span class="project-index">B</span>
+          <span class="project-main">
+            <span class="project-name">Electron 桌面应用 <em>prototype</em></span>
+            <span class="project-desc">尝试把 Web 技术带进桌面环境，验证跨端产品思路。</span>
+          </span>
+          <span class="project-state muted">原型</span>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a class="project-row" href="projects.html#competitions" data-link data-reveal style="--delay:.12s">
+          <span class="project-index">C</span>
+          <span class="project-main">
+            <span class="project-name">机器人 & 生成式 AI 竞赛 <em>团队项目</em></span>
+            <span class="project-desc">江苏省“领航杯”机器人项目二等奖，生成式人工智能专项赛一等奖。</span>
+          </span>
+          <span class="project-state award">获奖</span>
+          <span class="project-arrow">↗</span>
+        </a>
+      </div>
+
+      <p class="section-more" data-reveal>
+        <a href="projects.html" data-link>查看全部项目 <span>→</span></a>
+      </p>
+    </section>
+
+    <section class="section timeline-teaser" id="teaser">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span>04</span> / growth log</p>
+        <h2>一条从“古法编程”到 AI 加速的时间线</h2>
+      </div>
+      <p class="teaser-copy" data-reveal>
+        小学三年级从 Python 和它的各种库开始，后来转向 Java；等到初高中，AI 让开发效率开始成倍增长。
+      </p>
+      <p class="section-more" data-reveal>
+        <a class="btn btn-ghost" href="timeline.html" data-link>展开完整时间线 <span>→</span></a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">HGX<span>//</span>dev</div>
+    <p>Built by curiosity, debugged with patience.</p>
+    <div class="footer-meta">
+      <span id="year">2026</span>
+      <span>Jiangsu / CN</span>
+      <a href="#top" data-link>返回顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=6"></script>
+</body>
+</html>

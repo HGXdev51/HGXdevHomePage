@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="关于 HGXdev：从 Python 到 Java，再到 AI 辅助开发的个人经历。">
+  <meta name="theme-color" content="#0b0d10">
+  <title>关于 HGXdev</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body data-page="about">
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" data-link>
+      <span class="brand-mark">HGX</span><span class="brand-slash">//</span><span class="brand-dev">dev</span>
+    </a>
+
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html" data-link><span class="nav-index">01</span>首页</a>
+      <a href="about.html" data-link><span class="nav-index">02</span>关于</a>
+      <a href="projects.html" data-link><span class="nav-index">03</span>项目</a>
+      <a href="timeline.html" data-link><span class="nav-index">04</span>时间线</a>
+      <a href="contact.html" data-link><span class="nav-index">05</span>联系</a>
+    </nav>
+
+    <div class="header-meta">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>系统在线</span>
+      <span class="clock" id="clock">--:--:--</span>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
+
+  <main id="top">
+    <section class="page-intro">
+      <p class="eyebrow" data-reveal><span>02</span> / about</p>
+      <h1 data-reveal style="--delay:.05s">关于<span class="accent">我</span></h1>
+      <p class="page-lede" data-reveal style="--delay:.1s">
+        从小对计算机和编程感兴趣，喜欢通过编程解决实际问题。擅长利用 AI 辅助学习和开发。
+      </p>
+    </section>
+
+    <section class="section about-grid">
+      <div class="about-copy" data-reveal>
+        <p>
+          我最初接触编程，是从 Python 和它的各种库开始的。那时候更多是照着文档和教程把想法跑起来：写小游戏、处理数据、做点能替自己省事的小工具。
+        </p>
+        <p>
+          后来学习 Java，开始理解面向对象、类型和工程结构。再后来，AI 的发展让我重新理解了“开发效率”——它不是一个需要崇拜的魔法，而是一套可以拆解、组合、验证的工作流。
+        </p>
+        <p>
+          我做过个人网站、微信小程序和 Electron 桌面项目，也参加过机器人与生成式 AI 方向的比赛。比起“会多少语法”，我更在意能否把一个真实问题从头做到尾。
+        </p>
+      </div>
+
+      <aside class="about-panel" data-reveal="right" style="--delay:.12s">
+        <div class="panel-block">
+          <span class="panel-label">当前阶段</span>
+          <p>高中 / 持续实践</p>
+        </div>
+        <div class="panel-block">
+          <span class="panel-label">兴趣方向</span>
+          <p>AI 工具链 · 产品开发 · 自动化</p>
+        </div>
+        <div class="panel-block">
+          <span class="panel-label">工作原则</span>
+          <p>先跑通，再优化；把重复交给脚本。</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="awards">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span>03</span> / records</p>
+        <h2>一些留下过的痕迹</h2>
+      </div>
+
+      <div class="record-list">
+        <article class="record" data-reveal>
+          <span class="record-year">高中</span>
+          <div>
+            <h3>江苏省“领航杯”机器人项目</h3>
+            <p>二等奖 · 团队协作、传感器与现场调试</p>
+          </div>
+          <span class="record-mark">02</span>
+        </article>
+        <article class="record" data-reveal style="--delay:.06s">
+          <span class="record-year">高中</span>
+          <div>
+            <h3>生成式人工智能专项赛</h3>
+            <p>一等奖 · 用生成式 AI 完成真实任务</p>
+          </div>
+          <span class="record-mark">01</span>
+        </article>
+        <article class="record" data-reveal style="--delay:.12s">
+          <span class="record-year">持续</span>
+          <div>
+            <h3>个人网站与小程序</h3>
+            <p>从 0 到 1 的独立项目，包括已上线的“赴时手记”</p>
+          </div>
+          <span class="record-mark">∞</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="toolbox">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span>04</span> / toolbox</p>
+        <h2>常用工具，但不止于工具</h2>
+      </div>
+
+      <div class="toolbox">
+        <div class="tool-group" data-reveal>
+          <h3>语言</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript / TypeScript</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="tool-group" data-reveal style="--delay:.06s">
+          <h3>平台</h3>
+          <ul>
+            <li>微信小程序</li>
+            <li>Electron / Node.js</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+        <div class="tool-group" data-reveal style="--delay:.12s">
+          <h3>AI 实践</h3>
+          <ul>
+            <li>LLM 辅助编码</li>
+            <li>Prompt / Agent 工作流</li>
+            <li>自动化脚本</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band" data-reveal>
+      <p>想看看我是怎么一路走过来的？</p>
+      <a class="btn btn-primary" href="timeline.html" data-link>打开时间线 <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">HGX<span>//</span>dev</div>
+    <p>Built by curiosity, debugged with patience.</p>
+    <div class="footer-meta">
+      <span id="year">2026</span>
+      <span>Jiangsu / CN</span>
+      <a href="#top" data-link>返回顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=6"></script>
+</body>
+</html>
